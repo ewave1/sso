@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using Data.Entities;
+using System.Data.Entity;
 
 namespace SmartSSO.Entities
 {
@@ -31,5 +32,9 @@ namespace SmartSSO.Entities
         /// 用户授权会话
         /// </summary>
         public DbSet<UserAuthSession> UserAuthSession { get; set; }
+
+        public DbSet<Material> Material { get; set; }
+        public DbSet<Product> Product { get; set; }
+        public DbSet<InquiryLog> InquiryLog { get; set; }
     }
 }

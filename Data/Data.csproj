@@ -65,6 +65,14 @@
     <Compile Include="Migrations\201801030230118_InitralCreate.Designer.cs">
       <DependentUpon>201801030230118_InitralCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801040357467_InitralCreate1.cs" />
+    <Compile Include="Migrations\201801040357467_InitralCreate1.Designer.cs">
+      <DependentUpon>201801040357467_InitralCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801040401026_InitralCreate2.cs" />
+    <Compile Include="Migrations\201801040401026_InitralCreate2.Designer.cs">
+      <DependentUpon>201801040401026_InitralCreate2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SessionCacheItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,6 +88,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201801030230118_InitralCreate.resx">
       <DependentUpon>201801030230118_InitralCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801040357467_InitralCreate1.resx">
+      <DependentUpon>201801040357467_InitralCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801040401026_InitralCreate2.resx">
+      <DependentUpon>201801040401026_InitralCreate2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
