@@ -156,13 +156,6 @@
     <Compile Include="Controllers\PassportController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\UserManageController.cs" />
-    <Compile Include="Entities\AppInfo.cs" />
-    <Compile Include="Entities\AppUser.cs" />
-    <Compile Include="Entities\InitData.cs" />
-    <Compile Include="Entities\ManageUser.cs" />
-    <Compile Include="Entities\DefaultDbContext.cs" />
-    <Compile Include="Entities\UserAuthOperate.cs" />
-    <Compile Include="Entities\UserAuthSession.cs" />
     <Compile Include="Extendsions\ControllerExtendsions.cs" />
     <Compile Include="Extendsions\DateTimeExtendsions.cs" />
     <Compile Include="Extendsions\PagingExtendsions.cs" />

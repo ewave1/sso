@@ -11,10 +11,7 @@ namespace SmartSSO.Models
         }
 
         [MaxLength(50)]
-        [Required]
-        [DataType(DataType.EmailAddress)]
-        [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9._]+\.[A-Za-z]{2,4}", ErrorMessage = "电邮邮件格式不正确")]
-        [Display(Name = "邮箱地址")]
+        [Required] 
         public string UserName { get; set; }
 
         [MinLength(6)]

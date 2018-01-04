@@ -40,7 +40,7 @@ namespace WY.SSO
             Database.SetInitializer(new CreateDatabaseIfNotExists<DefaultDbContext>());
 
             //初始化数据
-            Database.SetInitializer(new InitData());
+            //Database.SetInitializer(new InitData());
 
             var log = LogManager.GetLogger(typeof(MvcApplication));
             log.Info(string.Format("{0}-start", DateTime.Now));

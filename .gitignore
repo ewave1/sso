@@ -108,3 +108,4 @@ Backup*/
 UpgradeLog*.XML
 /.vs/SmartSSO/v15/Server/sqlite3
 /.vs/config
+/.vs/Demo/v15/Server/sqlite3
