@@ -55,7 +55,10 @@
     <Compile Include="DefaultDbContext.cs" />
     <Compile Include="Entities\AppInfo.cs" />
     <Compile Include="Entities\AppUser.cs" />
+    <Compile Include="Entities\InquiryLog.cs" />
     <Compile Include="Entities\ManageUser.cs" />
+    <Compile Include="Entities\Material.cs" />
+    <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\UserAuthOperate.cs" />
     <Compile Include="Entities\UserAuthSession.cs" />
     <Compile Include="Migrations\201801030230118_InitralCreate.cs" />
