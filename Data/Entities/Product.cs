@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Data.Entities
 {
+    /// <summary>
+    /// 系统中的产品
+    /// </summary>
     public  class Product
     {
         /// <summary>

@@ -21,34 +21,47 @@ namespace Data.Entities
 
         /// <summary>
         /// 编码
-        /// </summary>
-        [Required]
-        [MaxLength(100)]
+        /// </summary>  
         public string Code { get; set; }
 
         /// <summary>
         /// 内径
-        /// </summary>
-        [Required]
+        /// </summary> 
         public decimal SizeA { get; set; }
 
         /// <summary>
         /// 线径
-        /// </summary>
-        [Required]
+        /// </summary> 
         public decimal SizeB { get; set; }
+     
+        /// <summary>
+        /// 工厂或贸易商
+        /// </summary>
+        public SOURCE Source { get; set; }
 
-
+        public int Number { get; set; }
+        //输出
         public string Material { get; set; }
         public int MaterialId { get; set; }
+
+        public decimal discount { get; set; }
+        public decimal Price { get; set; }
 
         /// <summary>
         /// 创建时间
         /// </summary>
         [Required]
         public DateTime CreateTime { get; set; }
-        //输出
+      
 
         //时间
+
+        public int User { get; set; }
+    }
+
+    public enum SOURCE
+    {
+        Factory = 0 ,
+        Other = 1 
     }
 }
