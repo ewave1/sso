@@ -37,7 +37,7 @@ namespace Data.Entities
         /// <summary>
         /// 工厂或贸易商
         /// </summary>
-        public SOURCE Source { get; set; }
+        public string Factory { get; set; }
 
         public int Number { get; set; }
         //输出
@@ -59,9 +59,5 @@ namespace Data.Entities
         public int User { get; set; }
     }
 
-    public enum SOURCE
-    {
-        Factory = 0 ,
-        Other = 1 
-    }
+  
 }

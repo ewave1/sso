@@ -34,6 +34,7 @@ namespace SmartSSO.Entities
         public DbSet<UserAuthSession> UserAuthSession { get; set; }
 
         public DbSet<Material> Material { get; set; }
+        public DbSet<Factory> Factory { get; set; }
         public DbSet<Product> Product { get; set; }
         public DbSet<InquiryLog> InquiryLog { get; set; }
     }

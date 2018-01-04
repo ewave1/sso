@@ -41,6 +41,7 @@ namespace Data.Entities
         public string Material { get; set; }
         public int MaterialId { get; set; }
 
+        public decimal Price { get; set; }
         /// <summary>
         /// 创建时间
         /// </summary>

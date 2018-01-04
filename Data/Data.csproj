@@ -55,6 +55,7 @@
     <Compile Include="DefaultDbContext.cs" />
     <Compile Include="Entities\AppInfo.cs" />
     <Compile Include="Entities\AppUser.cs" />
+    <Compile Include="Entities\Factory.cs" />
     <Compile Include="Entities\InquiryLog.cs" />
     <Compile Include="Entities\ManageUser.cs" />
     <Compile Include="Entities\Material.cs" />
@@ -72,6 +73,18 @@
     <Compile Include="Migrations\201801040401026_InitralCreate2.cs" />
     <Compile Include="Migrations\201801040401026_InitralCreate2.Designer.cs">
       <DependentUpon>201801040401026_InitralCreate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801040555292_InitralCreate3.cs" />
+    <Compile Include="Migrations\201801040555292_InitralCreate3.Designer.cs">
+      <DependentUpon>201801040555292_InitralCreate3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801040611527_InitralCreate4.cs" />
+    <Compile Include="Migrations\201801040611527_InitralCreate4.Designer.cs">
+      <DependentUpon>201801040611527_InitralCreate4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801040613565_InitralCreate5.cs" />
+    <Compile Include="Migrations\201801040613565_InitralCreate5.Designer.cs">
+      <DependentUpon>201801040613565_InitralCreate5.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SessionCacheItem.cs" />
@@ -94,6 +107,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801040401026_InitralCreate2.resx">
       <DependentUpon>201801040401026_InitralCreate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801040555292_InitralCreate3.resx">
+      <DependentUpon>201801040555292_InitralCreate3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801040611527_InitralCreate4.resx">
+      <DependentUpon>201801040611527_InitralCreate4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801040613565_InitralCreate5.resx">
+      <DependentUpon>201801040613565_InitralCreate5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
