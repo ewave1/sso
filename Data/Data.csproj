@@ -31,13 +31,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Enyim.Caching, Version=2.16.0.0, Culture=neutral, PublicKeyToken=cec98615db04012e, processorArchitecture=MSIL">
       <HintPath>..\packages\EnyimMemcached.2.16.0\lib\net35\Enyim.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.10\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.10\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -63,77 +69,9 @@
     <Compile Include="Entities\SealCode.cs" />
     <Compile Include="Entities\UserAuthOperate.cs" />
     <Compile Include="Entities\UserAuthSession.cs" />
-    <Compile Include="Migrations\201801030230118_InitralCreate.cs" />
-    <Compile Include="Migrations\201801030230118_InitralCreate.Designer.cs">
-      <DependentUpon>201801030230118_InitralCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801040357467_InitralCreate1.cs" />
-    <Compile Include="Migrations\201801040357467_InitralCreate1.Designer.cs">
-      <DependentUpon>201801040357467_InitralCreate1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801040401026_InitralCreate2.cs" />
-    <Compile Include="Migrations\201801040401026_InitralCreate2.Designer.cs">
-      <DependentUpon>201801040401026_InitralCreate2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801040555292_InitralCreate3.cs" />
-    <Compile Include="Migrations\201801040555292_InitralCreate3.Designer.cs">
-      <DependentUpon>201801040555292_InitralCreate3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801040611527_InitralCreate4.cs" />
-    <Compile Include="Migrations\201801040611527_InitralCreate4.Designer.cs">
-      <DependentUpon>201801040611527_InitralCreate4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801040613565_InitralCreate5.cs" />
-    <Compile Include="Migrations\201801040613565_InitralCreate5.Designer.cs">
-      <DependentUpon>201801040613565_InitralCreate5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801061635306_InitralCreate6.cs" />
-    <Compile Include="Migrations\201801061635306_InitralCreate6.Designer.cs">
-      <DependentUpon>201801061635306_InitralCreate6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801061734299_InitralCreate7.cs" />
-    <Compile Include="Migrations\201801061734299_InitralCreate7.Designer.cs">
-      <DependentUpon>201801061734299_InitralCreate7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801070458285_InitralCreate8.cs" />
-    <Compile Include="Migrations\201801070458285_InitralCreate8.Designer.cs">
-      <DependentUpon>201801070458285_InitralCreate8.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801070504040_InitralCreate9.cs" />
-    <Compile Include="Migrations\201801070504040_InitralCreate9.Designer.cs">
-      <DependentUpon>201801070504040_InitralCreate9.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801070707594_InitralCreate10.cs" />
-    <Compile Include="Migrations\201801070707594_InitralCreate10.Designer.cs">
-      <DependentUpon>201801070707594_InitralCreate10.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801070751154_InitralCreate11.cs" />
-    <Compile Include="Migrations\201801070751154_InitralCreate11.Designer.cs">
-      <DependentUpon>201801070751154_InitralCreate11.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801071348210_InitralCreate12.cs" />
-    <Compile Include="Migrations\201801071348210_InitralCreate12.Designer.cs">
-      <DependentUpon>201801071348210_InitralCreate12.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801071403204_InitralCreate13.cs" />
-    <Compile Include="Migrations\201801071403204_InitralCreate13.Designer.cs">
-      <DependentUpon>201801071403204_InitralCreate13.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801071409196_InitralCreate14.cs" />
-    <Compile Include="Migrations\201801071409196_InitralCreate14.Designer.cs">
-      <DependentUpon>201801071409196_InitralCreate14.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801081516214_InitralCreate15.cs" />
-    <Compile Include="Migrations\201801081516214_InitralCreate15.Designer.cs">
-      <DependentUpon>201801081516214_InitralCreate15.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801081517564_InitralCreate16.cs" />
-    <Compile Include="Migrations\201801081517564_InitralCreate16.Designer.cs">
-      <DependentUpon>201801081517564_InitralCreate16.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801081530380_InitralCreate17.cs" />
-    <Compile Include="Migrations\201801081530380_InitralCreate17.Designer.cs">
-      <DependentUpon>201801081530380_InitralCreate17.cs</DependentUpon>
+    <Compile Include="Migrations\201801091516336_InitralCreate.cs" />
+    <Compile Include="Migrations\201801091516336_InitralCreate.Designer.cs">
+      <DependentUpon>201801091516336_InitralCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Request\HomeLoginRequest.cs" />
@@ -151,62 +89,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Models\packages.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201801030230118_InitralCreate.resx">
-      <DependentUpon>201801030230118_InitralCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801040357467_InitralCreate1.resx">
-      <DependentUpon>201801040357467_InitralCreate1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801040401026_InitralCreate2.resx">
-      <DependentUpon>201801040401026_InitralCreate2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801040555292_InitralCreate3.resx">
-      <DependentUpon>201801040555292_InitralCreate3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801040611527_InitralCreate4.resx">
-      <DependentUpon>201801040611527_InitralCreate4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801040613565_InitralCreate5.resx">
-      <DependentUpon>201801040613565_InitralCreate5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801061635306_InitralCreate6.resx">
-      <DependentUpon>201801061635306_InitralCreate6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801061734299_InitralCreate7.resx">
-      <DependentUpon>201801061734299_InitralCreate7.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801070458285_InitralCreate8.resx">
-      <DependentUpon>201801070458285_InitralCreate8.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801070504040_InitralCreate9.resx">
-      <DependentUpon>201801070504040_InitralCreate9.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801070707594_InitralCreate10.resx">
-      <DependentUpon>201801070707594_InitralCreate10.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801070751154_InitralCreate11.resx">
-      <DependentUpon>201801070751154_InitralCreate11.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801071348210_InitralCreate12.resx">
-      <DependentUpon>201801071348210_InitralCreate12.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801071403204_InitralCreate13.resx">
-      <DependentUpon>201801071403204_InitralCreate13.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801071409196_InitralCreate14.resx">
-      <DependentUpon>201801071409196_InitralCreate14.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801081516214_InitralCreate15.resx">
-      <DependentUpon>201801081516214_InitralCreate15.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801081517564_InitralCreate16.resx">
-      <DependentUpon>201801081517564_InitralCreate16.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801081530380_InitralCreate17.resx">
-      <DependentUpon>201801081530380_InitralCreate17.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201801091516336_InitralCreate.resx">
+      <DependentUpon>201801091516336_InitralCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

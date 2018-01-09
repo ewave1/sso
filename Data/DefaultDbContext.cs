@@ -3,6 +3,8 @@ using System.Data.Entity;
 
 namespace SmartSSO.Entities
 {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
+
     /// <summary>
     /// 默认数据上下文
     /// </summary>

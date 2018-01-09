@@ -6,14 +6,14 @@ namespace SmartSSO.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class InitralCreate17 : IMigrationMetadata
+    [GeneratedCode("EntityFramework.Migrations", "6.0.0-20911")]
+    public sealed partial class InitralCreate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitralCreate17));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitralCreate));
         
         string IMigrationMetadata.Id
         {
-            get { return "201801081530380_InitralCreate17"; }
+            get { return "201801091516336_InitralCreate"; }
         }
         
         string IMigrationMetadata.Source
