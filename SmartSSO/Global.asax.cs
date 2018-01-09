@@ -6,8 +6,9 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using log4net;
 using SmartSSO.Entities;
+using WY.SSO;
 
-namespace WY.SSO
+namespace InquiryDemo
 {
     public class MvcApplication : System.Web.HttpApplication
     {
