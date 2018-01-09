@@ -39,6 +39,12 @@
     <Reference Include="Enyim.Caching, Version=2.16.0.0, Culture=neutral, PublicKeyToken=cec98615db04012e, processorArchitecture=MSIL">
       <HintPath>..\packages\EnyimMemcached.2.16.0\lib\net35\Enyim.Caching.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.10\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.10\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -62,29 +68,9 @@
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\UserAuthOperate.cs" />
     <Compile Include="Entities\UserAuthSession.cs" />
-    <Compile Include="Migrations\201801030230118_InitralCreate.cs" />
-    <Compile Include="Migrations\201801030230118_InitralCreate.Designer.cs">
-      <DependentUpon>201801030230118_InitralCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801040357467_InitralCreate1.cs" />
-    <Compile Include="Migrations\201801040357467_InitralCreate1.Designer.cs">
-      <DependentUpon>201801040357467_InitralCreate1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801040401026_InitralCreate2.cs" />
-    <Compile Include="Migrations\201801040401026_InitralCreate2.Designer.cs">
-      <DependentUpon>201801040401026_InitralCreate2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801040555292_InitralCreate3.cs" />
-    <Compile Include="Migrations\201801040555292_InitralCreate3.Designer.cs">
-      <DependentUpon>201801040555292_InitralCreate3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801040611527_InitralCreate4.cs" />
-    <Compile Include="Migrations\201801040611527_InitralCreate4.Designer.cs">
-      <DependentUpon>201801040611527_InitralCreate4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201801040613565_InitralCreate5.cs" />
-    <Compile Include="Migrations\201801040613565_InitralCreate5.Designer.cs">
-      <DependentUpon>201801040613565_InitralCreate5.cs</DependentUpon>
+    <Compile Include="Migrations\201801090857577_InitralCreate.cs" />
+    <Compile Include="Migrations\201801090857577_InitralCreate.Designer.cs">
+      <DependentUpon>201801090857577_InitralCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SessionCacheItem.cs" />
@@ -99,23 +85,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201801030230118_InitralCreate.resx">
-      <DependentUpon>201801030230118_InitralCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801040357467_InitralCreate1.resx">
-      <DependentUpon>201801040357467_InitralCreate1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801040401026_InitralCreate2.resx">
-      <DependentUpon>201801040401026_InitralCreate2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801040555292_InitralCreate3.resx">
-      <DependentUpon>201801040555292_InitralCreate3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801040611527_InitralCreate4.resx">
-      <DependentUpon>201801040611527_InitralCreate4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201801040613565_InitralCreate5.resx">
-      <DependentUpon>201801040613565_InitralCreate5.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201801090857577_InitralCreate.resx">
+      <DependentUpon>201801090857577_InitralCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
