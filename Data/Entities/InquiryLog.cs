@@ -39,13 +39,23 @@ namespace Data.Entities
         /// </summary>
         public string Factory { get; set; }
 
+        /// <summary>
+        /// 数量
+        /// </summary>
         public int Number { get; set; }
-        //输出
+
+        /// <summary>
+        /// 材料
+        /// </summary>
         public string Material { get; set; }
         public int MaterialId { get; set; }
 
+
         public decimal discount { get; set; }
+        
         public decimal Price { get; set; }
+
+        public decimal TotalPrice { get; set; }
 
         /// <summary>
         /// 创建时间
@@ -53,10 +63,11 @@ namespace Data.Entities
         [Required]
         public DateTime CreateTime { get; set; }
       
+         
 
-        //时间
-
-        public int User { get; set; }
+        public string User { get; set; }
+         
+        
     }
 
   

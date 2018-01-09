@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Data.Models;
 using SmartSSO.Entities;
+using SmartSSO.Models;
 using SmartSSO.Services.Util;
 
 namespace SmartSSO.Services
@@ -16,7 +18,7 @@ namespace SmartSSO.Services
 
         bool Edit(ManageUser model);
 
-        bool Create(ManageUser model);
+        RepResult<ManageUser> Create(UserCreateRequest model);
 
         bool Delete(string username);
 

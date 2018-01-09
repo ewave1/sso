@@ -11,10 +11,14 @@
 // 完成日期：2014年05月14日
 // 
 
+using System;
 using System.Data.Entity;
 using System.Linq;
 using SmartSSO.Entities;
+using SmartSSO.Models;
 using SmartSSO.Services.Util;
+using SmartSSO.Extendsions;
+using Data.Models;
 
 namespace SmartSSO.Services.Impl
 {
@@ -30,10 +34,35 @@ namespace SmartSSO.Services.Impl
             return result;
         }
 
-        public bool Create(ManageUser model)
+        public RepResult<ManageUser> Create(UserCreateRequest req)
         {
-            DbContext.ManageUser.Add(model);
-            return DbContext.SaveChanges() > 0;
+            var userPwdHash = req.Password?.ToMd5();
+            var model = new ManageUser
+            {
+                UserName = req.UserName,
+                UserPwd = userPwdHash,
+                Nick = req.Nick,
+                Discount = req.Discount,
+                CreateTime = DateTime.Now,
+                IsAdmin = req.IsAdmin
+            };
+            if (!ExistsUser(req.UserName))
+            {
+                DbContext.ManageUser.Add(model);
+            }
+            else if (!req.IsAdd)
+            {
+                model = DbContext.ManageUser.Find(req.UserName);
+                if (!string.IsNullOrEmpty(userPwdHash))
+                    model.UserPwd = userPwdHash;
+                model.Discount = req.Discount;
+                model.IsAdmin = req.IsAdmin;
+            }
+            else
+                return new RepResult<ManageUser> { Code = -1, Msg = "登录账号已存在"};
+            DbContext.SaveChanges();
+
+            return new RepResult<ManageUser> { Data = model};
         }
 
         public bool ExistsUser(string username)

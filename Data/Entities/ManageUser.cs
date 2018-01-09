@@ -27,10 +27,14 @@ namespace SmartSSO.Entities
         public string Nick { get; set; }
 
         /// <summary>
-        /// 是否启用
+        /// 用户的折扣
+        /// </summary>
+        public decimal Discount { get; set; }
+        /// <summary>
+        /// 是否管理员
         /// </summary>
         [Required]
-        public bool IsEnable { get; set; }
+        public bool IsAdmin { get; set; }
 
         /// <summary>
         /// 创建时间

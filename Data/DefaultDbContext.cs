@@ -3,7 +3,6 @@ using System.Data.Entity;
 
 namespace SmartSSO.Entities
 {
-    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     /// <summary>
     /// 默认数据上下文
     /// </summary>
@@ -35,8 +34,15 @@ namespace SmartSSO.Entities
         public DbSet<UserAuthSession> UserAuthSession { get; set; }
 
         public DbSet<Material> Material { get; set; }
-        public DbSet<Factory> Factory { get; set; }
+        public DbSet<DiscountSet> DiscountSet { get; set; }
         public DbSet<Product> Product { get; set; }
+        public DbSet<SealCode> SealCode { get; set; }
         public DbSet<InquiryLog> InquiryLog { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<InquiryLog>().Property(p => p.Price).HasPrecision(18, 3);
+            modelBuilder.Entity<Product>().Property(p => p.Price).HasPrecision(18, 3);
+        }
     }
 }

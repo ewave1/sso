@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="IAppInfoService.cs" />
     <Compile Include="IAppUserService.cs" />
+    <Compile Include="IDiscountService.cs" />
+    <Compile Include="IInquiryService.cs" />
     <Compile Include="IManageService.cs" />
     <Compile Include="IPassportService.cs" />
     <Compile Include="IProfileService.cs" />

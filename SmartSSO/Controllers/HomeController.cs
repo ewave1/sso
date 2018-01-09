@@ -10,10 +10,11 @@ using SmartSSO.Models;
 using SmartSSO.Services;
 using Microsoft.Practices.Unity;
 using SmartSSO.Services.Impl;
+using MyDemo.Controllers;
 
 namespace SmartSSO.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         #region 私有字段
 
@@ -48,7 +49,7 @@ namespace SmartSSO.Controllers
             if (_manageService.Login(model.UserName, model.Password.ToMd5()))
             {
                 Response.Cookies.Add(new HttpCookie(UserAuthorizationAttribute.CookieUserName, model.UserName));
-                return RedirectToAction("Index");
+                return RedirectToAction("Index","Inquiry");
             }
 
             ModelState.AddModelError("_error", "登录密码错误或用户不存在或用户被禁用。");
